@@ -3,14 +3,13 @@
     top: 23px;
     left: 0px;
     width: 132px;
-    visibility: visible;
+    visibility: hidden;
 }
 
 #img_BassClef {
     position: absolute;
     top: 62px;
-    left: 200px;
+    left: 15px;
     width: 110px;
     visibility: visible;
-
 }
