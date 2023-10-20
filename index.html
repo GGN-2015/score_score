@@ -8,18 +8,36 @@
 
         <link rel="stylesheet" type="text/css" href="./css/clef.css">
         <link rel="stylesheet" type="text/css" href="./css/hr.css">
+        <link rel="stylesheet" type="text/css" href="./css/shr.css">
+        <link rel="stylesheet" type="text/css" href="./css/note.css">
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery -->
     </head>
     <body>
         <img src="./img/TrebleClef.svg" id="img_TrebleClef" alt="高音谱号">
         <img src="./img/BassClef.svg" id="img_BassClef" alt="低音谱号">
+        <img src="./img/QuarterNote.svg" id="img_QuarterNote" alt="四分音符">
+
+        <!-- 上加谱线 -->
+        <hr class="float_shr" id="img_shr_04">
+        <hr class="float_shr" id="img_shr_03">
+        <hr class="float_shr" id="img_shr_02">
+        <hr class="float_shr" id="img_shr_01">
+
+        <!-- 主要谱线 -->
         <hr class="float_hr" id="img_hr_01">
         <hr class="float_hr" id="img_hr_02">
         <hr class="float_hr" id="img_hr_03">
         <hr class="float_hr" id="img_hr_04">
         <hr class="float_hr" id="img_hr_05">
 
+        <!-- 下加谱线 -->
+        <hr class="float_shr" id="img_shr_05">
+        <hr class="float_shr" id="img_shr_06">
+        <hr class="float_shr" id="img_shr_07">
+        <hr class="float_shr" id="img_shr_08">
+
+        <!-- 控制逻辑 -->
         <script src="./script/controll.js" type="module"></script>
     </body>
 </html>

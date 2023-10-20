@@ -1,3 +1,5 @@
+/* 本 css 主要负责控制五线谱中的五条主要谱线的位置 */
+
 .float_hr {
     position: absolute;
     left: 0;
@@ -7,21 +9,21 @@
 }
 
 #img_hr_01 {
-    top: 75px;
+    top: 250px;
 }
 
 #img_hr_02 {
-    top: 110px;
+    top: 285px;
 }
 
 #img_hr_03 {
-    top: 145px;
+    top: 320px;
 }
 
 #img_hr_04 {
-    top: 180px;
+    top: 355px;
 }
 
 #img_hr_05 {
-    top: 215px;
+    top: 390px;
 }

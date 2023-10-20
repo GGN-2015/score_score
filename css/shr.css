@@ -1,0 +1,41 @@
+/* 本 css 主要负责控制五线谱中的上加和下加谱线 */
+
+.float_shr {
+    position: absolute;
+    left: 300px;
+    width: 70px;
+    border: none;
+    border-top: thick solid black;
+}
+
+#img_shr_01 {
+    top: 215px;
+}
+
+#img_shr_02 {
+    top: 180px;
+}
+
+#img_shr_03 {
+    top: 145px;
+}
+
+#img_shr_04 {
+    top: 110px;
+}
+
+#img_shr_05 {
+    top: 425px;
+}
+
+#img_shr_06 {
+    top: 460px;
+}
+
+#img_shr_07 {
+    top: 495px;
+}
+
+#img_shr_08 {
+    top: 530px;
+}

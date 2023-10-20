@@ -1,6 +1,8 @@
+/* 本 css 主要控制低音谱号和高音谱号的位置和大小 */
+
 #img_TrebleClef {
     position: absolute;
-    top: 23px;
+    top: 198px;
     left: 0px;
     width: 132px;
     visibility: hidden;
@@ -8,7 +10,7 @@
 
 #img_BassClef {
     position: absolute;
-    top: 62px;
+    top: 237px;
     left: 15px;
     width: 110px;
     visibility: visible;

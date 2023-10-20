@@ -1,3 +1,5 @@
+/* 核心控制逻辑 */
+
 import {
     show_treble_clef, 
     hide_treble_clef, 
@@ -5,7 +7,7 @@ import {
     hide_bass_clef
 } from "./show_hide.js";
 
-function get_timesyamp() {
+function get_timestamp() { // 获取系统秒级时间戳
     var currentTime = new Date();
     var hours       = currentTime.getHours()  .toString().padStart(2, "0");
     var minutes     = currentTime.getMinutes().toString().padStart(2, "0");
@@ -14,7 +16,7 @@ function get_timesyamp() {
 }
 
 function mylog(message) {
-    console.log("[" + get_timesyamp() + "] controll.js: " + message); // 输出日志
+    console.log("[" + get_timestamp() + "] controll.js: " + message); // 输出日志
 }
 
 mylog("脚本可用");

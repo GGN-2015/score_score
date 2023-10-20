@@ -1,3 +1,5 @@
+/* 本文件主要控制高音谱号和低音谱号的显示或者隐藏 */
+
 export function show_treble_clef() { // 显示高音谱号
     $("#img_TrebleClef").css("visibility", "visible");
 }
