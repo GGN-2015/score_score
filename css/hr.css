@@ -1,0 +1,27 @@
+.float_hr {
+    position: absolute;
+    left: 0;
+    right: 0;
+    border: none;
+    border-top: thick solid black;
+}
+
+#img_hr_01 {
+    top: 75px;
+}
+
+#img_hr_02 {
+    top: 110px;
+}
+
+#img_hr_03 {
+    top: 145px;
+}
+
+#img_hr_04 {
+    top: 180px;
+}
+
+#img_hr_05 {
+    top: 215px;
+}
