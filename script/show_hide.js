@@ -25,3 +25,17 @@ export function treble_or_bass() {
     if(bass_v   == "visible") return "bass";
     return ""; // 没有人在占据谱号
 }
+
+export function get_tune_mode_name() {
+    return treble_or_bass();
+}
+
+export function toggle_tune_mode() { // 更改谱号
+    if(treble_or_bass() == "treble") {
+        hide_treble_clef();
+        show_bass_clef();
+    }else {
+        show_treble_clef();
+        hide_bass_clef();
+    }
+}

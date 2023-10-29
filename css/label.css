@@ -1,5 +1,17 @@
-#img_label_show_tune {
+#img_label_time_left {
     position: absolute;
     top: 0px;
     left: 500px;
-};
+}
+
+#img_label_show_question {
+    position: absolute;
+    top: 50px;
+    left: 500px;
+}
+
+#img_label_show_tune {
+    position: absolute;
+    top: 100px;
+    left: 500px;
+}
