@@ -15,3 +15,13 @@ export function show_bass_clef() { // 显示低音谱号
 export function hide_bass_clef() { // 隐藏低音谱号
     $("#img_BassClef").css("visibility", "hidden");
 }
+
+// 显示当前谱号是谁
+export function treble_or_bass() {
+    var bass_v   = $("#img_BassClef").css("visibility");
+    var treble_v = $("#img_TrebleClef").css("visibility");
+
+    if(treble_v == "visible") return "treble";
+    if(bass_v   == "visible") return "bass";
+    return ""; // 没有人在占据谱号
+}
