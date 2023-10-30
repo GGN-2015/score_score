@@ -6,6 +6,7 @@
 
 #img_label_show_question {
     position: absolute;
+    color: red;
     top: 50px;
     left: 500px;
 }

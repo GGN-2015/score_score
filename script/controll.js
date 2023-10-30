@@ -11,10 +11,6 @@ import {
 } from "./mouse.js"
 
 import {
-    count_down_trigger
-} from "./clock.js"
-
-import {
     refresh_question
 } from "./text_ctrl.js"
 
@@ -39,7 +35,4 @@ $(document).ready(function() { // 在页面加载完成后执行的代码
     add_mouse_listener();
 
     refresh_question();
-    count_down_trigger(120, (value) => {
-        $("#img_label_time_left").text("倒计时：" + value);
-    })
 });
