@@ -18,8 +18,24 @@ export function get_global_line_id_now() {
     return global_line_id_now;
 }
 
+export function set_position_for_movable(mouseX) {
+    var id_array = new Array(
+        "img_shr_01", "img_shr_02", "img_shr_03", "img_shr_04", "img_shr_05", "img_shr_06", "img_shr_07", "img_shr_08", 
+    );
+    var width = parseInt($("#img_shr_01").css("width").slice(0, -2));
+    for(var i = 0; i < id_array.length; i += 1) {
+        var id_now = id_array[i];
+
+        $("#" + id_now).css("left", mouseX - width / 2); 
+    }
+
+    $("#img_QuarterNote").css("left", mouseX - (width * 0.6));
+}
+
 // 获取离散型位置
 export function get_position_from_continuous(mouseY) {
+
+    mouseY = mouseY - 10;
 
     // 构造所有可能停留音符的纵坐标
     var position_array = new Array(

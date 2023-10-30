@@ -21,12 +21,21 @@ import {
 import {
     count_down_trigger
 } from "./clock.js"
-import { toggle_tune_mode } from "./show_hide.js"
+
+import {
+    set_position_for_movable
+} from "./position.js"
+
+import { 
+    toggle_tune_mode 
+} from "./show_hide.js"
 
 export function add_mouse_listener() {
     $(document).mousemove(function(event) {
         var mouseX = event.pageX;
         var mouseY = event.pageY;
+
+        set_position_for_movable(mouseX); // 移动所有需要跟随鼠标移动的东西
     
         // 获取离散型位置
         var dis_pos = get_position_from_continuous(mouseY);
@@ -41,6 +50,9 @@ export function add_mouse_listener() {
             refresh_question();
             add_correct_question_count();
         }
+
+        const selection = window.getSelection(); // 取消选区
+        selection.removeAllRanges();
     });
 
     $("#img_label_show_score").click(function(event) { // 开始倒计时
