@@ -2,6 +2,9 @@
 The Five-Line Staff Quick Sight-Reading Training.
 
 
+## 计划
+- 计划做成一个纯前端的 `js` 小游戏，感觉应该不会很难
+
 
 ## 功能
 
