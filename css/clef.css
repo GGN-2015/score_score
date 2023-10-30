@@ -6,6 +6,7 @@
     left: 0px;
     width: 132px;
     visibility: hidden;
+    z-index: 9999;
 }
 
 #img_BassClef {
@@ -14,4 +15,5 @@
     left: 15px;
     width: 110px;
     visibility: visible;
+    z-index: 9999;
 }

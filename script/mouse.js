@@ -57,6 +57,7 @@ export function add_mouse_listener() {
 
     $("#img_label_show_score").click(function(event) { // 开始倒计时
         $("#img_label_show_score").text("分数：" + 0);
+        refresh_question(); // 点击开始倒计时要重新计算问题，因为可能改变了谱号
 
         set_game_start();
         count_down_trigger(120, (value) => {
