@@ -30,6 +30,10 @@ import {
     toggle_tune_mode 
 } from "./show_hide.js"
 
+import {
+    play_success_wav
+} from "./sound.js"
+
 export function add_mouse_listener() {
     $(document).mousemove(function(event) {
         var mouseX = event.pageX;
@@ -49,6 +53,7 @@ export function add_mouse_listener() {
         if(question_correct() && get_game_start()) { // 每当问题回答正确时
             refresh_question();
             add_correct_question_count();
+            play_success_wav();
         }
 
         const selection = window.getSelection(); // 取消选区

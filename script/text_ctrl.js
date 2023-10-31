@@ -48,7 +48,4 @@ export function add_correct_question_count() { // 加一个正确回答问题数
     question_count += 1;
 
     $("#img_label_show_score").text("分数：" + question_count);
-    setTimeout(function() {
-        play_sound("./sound/success.wav"); // 播放一段音乐
-    }, 100);
 }
